@@ -6,15 +6,12 @@
 
 	a. Dockerfile
 	
-		```
 		FROM python:3-onbuild
 		COPY . /usr/src/app
 		CMD ["python", "api.py"]
-		```
 		
 	b. api.py
 	
-		```
 		# Product Service
 		# Import framework
 		from flask import Flask
@@ -32,14 +29,12 @@
 		# Run the application
 		if __name__ == '__main__':
 		    app.run(host='0.0.0.0', port=80, debug=True)
-		```
 		
 	c. requirement.txt
 	
-		```
 		Flask==0.12
 		flask-restful==0.3.5
-		```
+		
 4. lalu buat direktori website untuk menyimpan file index.php
 	```
 	<html>
