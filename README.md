@@ -1,5 +1,6 @@
 # Docker Compose
 
+# Membuat Docker Compose
 1. Buat Direktori Project. misal DockerCompose
 2. Lalu Buat directori baru didalamnya dengan nama biodata
 3. pada directori buat 3 buah file yaitu
@@ -75,3 +76,16 @@
     		depends_on:
       			- biodata-service
 	```
+# Untuk Menjalankan Docker Compose
+1. masuk pada directori DockerCompose yang kita buat tadi
+2. karana saya menggunakan linux, maka masuk ke terminal
+3. kemudian jalankan perintah
+```
+docker-compose up
+```
+4. lalu setelah proses berjalan, masuk ke browser dan tuju ke alamat
+```
+http://localhost:5000/
+```
+5. maka akan tampil halaman index.php
+6. untuk menghentikan docker compose tinggal tekan ctrl+c pada terminal yang dibuka tadi
