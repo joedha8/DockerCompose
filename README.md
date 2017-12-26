@@ -3,12 +3,14 @@
 1. Buat Direktori Project. misal DockerCompose
 2. Lalu Buat directori baru didalamnya dengan nama biodata
 3. pada directori buat 3 buah file yaitu
+
 	a. Dockerfile
 		```
 		FROM python:3-onbuild
 		COPY . /usr/src/app
 		CMD ["python", "api.py"]
 		```
+		
 	b. api.py
 		```
 		# Product Service
@@ -29,6 +31,7 @@
 		if __name__ == '__main__':
 		    app.run(host='0.0.0.0', port=80, debug=True)
 		```
+		
 	c. requirement.txt
 		```
 		Flask==0.12
