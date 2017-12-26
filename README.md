@@ -5,6 +5,7 @@
 3. pada directori buat 3 buah file yaitu
 
 	a. Dockerfile
+	
 		```
 		FROM python:3-onbuild
 		COPY . /usr/src/app
@@ -12,6 +13,7 @@
 		```
 		
 	b. api.py
+	
 		```
 		# Product Service
 		# Import framework
@@ -33,6 +35,7 @@
 		```
 		
 	c. requirement.txt
+	
 		```
 		Flask==0.12
 		flask-restful==0.3.5
